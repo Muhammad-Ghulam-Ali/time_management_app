@@ -274,9 +274,11 @@ main .input button:hover {
     }
     .mobile-header {
         display: flex;
-        justify-content: center !important;
+        justify-content: space-between !important;
         align-items: center;
-        gap: 20px;
+        padding-left: 0px !important;
+        padding-right: 15px !important;
+        gap: 10px;
         position: fixed;
         top: 0;
         left: 0;
