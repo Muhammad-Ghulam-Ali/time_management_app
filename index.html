@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="mobile-header">
+        <h1>STUDENT TIME MANAGEMENT APP</h1>
+        <button class="menu-btn">☰</button>
+    </header>
+    
+   
+    <!-- side bar -->
+    <div class="app">
+        <div class="sideBar">
+            <h1>STUDENT TIME MANAGEMENT</h1>
+            <div class="buttons">
+                <button data-feature="task" class="active">Add Task</button>
+                <button data-feature="assignment">Assignment</button>
+                <button data-feature="quiz">Quiz</button>
+                <button data-feature="project">Project Ideas</button>
+                <button data-feature="job">Job Application</button>
+            </div>
+            <div class="devolper">
+                <small>Developed by Muhammad Ghulam Ali</small>
+            </div>
+        </div>
+
+
+        <!-- main -->
+        <main>
+            <!-- Task -->
+            <div class="feature" data-feature="task">
+                <div class="input">
+                    <label for="taskTitle">Task Title</label>
+                    <input type="text" id="taskTitle" placeholder="Add your task here ...">
+                    <label for="taskDescription">Task Description</label>
+                    <textarea id="taskDescription"></textarea>
+                    <button>Add</button>
+                </div>
+                <!-- Task Result -->
+                <div class="taskResultCard">
+                    <!-- <p id="taskMessage">No tasks yet.</p> -->
+                    <ul id="tasksList">
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Assignment -->
+            <div class="feature" data-feature="assignment">
+                <div class="input">
+                    <label for="asgSubject">Subject</label>
+                    <input type="text" id="asgSubject" placeholder="Subject name ...">
+                    <label for="asgDate">Date</label>
+                    <input type="date" id="asgDate">
+                    <label for="asgDescription">Assignment Description</label>
+                    <textarea id="detail"></textarea>
+                    <button id="asgBtn">Add</button>
+                </div>
+                <!-- Assignment Result -->
+                <div class="taskResultCard">
+                    <!-- <p id="asgMessage">No assignments yet.</p> -->
+                    <ul id="assignmentList">
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Quiz -->
+            <div class="feature" data-feature="quiz">
+                <div class="input">
+                    <label for="quizSubject">Subject</label>
+                    <input type="text" id="quizSubject" placeholder="Subject name ...">
+                    <label for="quizDate">Date</label>
+                    <input type="date" id="quizDate">
+                    <label for="quizDescription">Quiz Description</label>
+                    <textarea id="quizDetail"></textarea>
+                    <button id="quizBtn">Add</button>
+                </div>
+                <!-- Quiz Result -->
+                <div class="taskResultCard">
+                    <!-- <p id="quizMessage">No quizes yet.</p> -->
+                    <ul id="quizList">
+             
+                    </ul>
+                </div>
+            </div>
+            <!-- Project -->
+            <div class="feature" data-feature="project">
+                <div class="input">
+                    <label for="projectIdea">Project Idea</label>
+                    <input type="text" id="projectIdea" placeholder="Add your project here ...">
+                    <label for="projectDescription">Description</label>
+                    <textarea id="projectDescription"></textarea>
+                    <button id="projectBtn">Add</button>
+                </div>
+                <!-- Project Result -->
+                <div class="taskResultCard">
+                    <!-- <p id="projectMessage">No projects yet.</p> -->
+                    <ul id="projectList">
+                  
+                    </ul>
+                </div>
+            </div>
+            <!-- Job -->
+            <div class="feature" data-feature="job">
+                <div class="input">
+                    <label for="companyName">Company</label>
+                    <input type="text" id="companyName" placeholder="Company name ...">
+                    <label for="jobTitle">Title</label>
+                    <input type="text" id="jobTitle" placeholder="Job title ...">
+                    <label for="jobDescription">Job Description</label>
+                    <textarea id="jobDescription"></textarea>
+                    <button id="jobBtn">Add</button>
+                </div>
+                <!-- Job Result -->
+                <div class="taskResultCard">
+                    <!-- <p id="jobMessage">No jobs yet.</p> -->
+                    <ul id="jobList">
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
